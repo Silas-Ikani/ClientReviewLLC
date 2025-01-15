@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,100;0,2col-md-200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,100;1,2col-md-200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation start -->
+     <div class="Header-container">
+        <nav class="navbar navbar-expand-lg py-2 col-md-2">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="Assets/img/logo.png" alt="Review Clients logo">
+                    </a>
+                </div>
+    
+                <!-- Toggle start -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <!-- Toggle end -->
+    
+                <!-- menu start -->
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2">
+                        <li class="nav-link active" aria-current="page"><a href="#">Sign In</a></li>
+                        <li class="nav-link"><a href="#">Write a Review</a></li>
+                        <li class="nav-link"><a href="#">Post Pay Rate</a></li>
+                        
+                    </ul>
+                 </div>
+                <!-- menu end -->
+            </div>
+         </nav>
+        <!-- Header/Navigation end -->
+    
+        <!-- Hero-section start -->
+         <section id="hero-section">
+            <div class="container">
+                <div class="hero-text mb-4">
+                    <p class="fs-4 text-white ">Search for <em>anonymously</em> posted Reviews and Pay Rates:</p>
+                </div>
+                <form class="form-container">
+                    <div class="form-group">
+                        <input type="text" id="form-inp1" placeholder="Client name or Skill name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="form-inp2" placeholder="Location">
+                    </div>
+                    <div class="form-group">
+                        <button class="form-btn" type="submit">SEARCH NOW</button>
+                    </div>
+                  </form>
+                  
+            </div>
+         </section>
+        <!-- Hero-section end -->
+     </div>
+
+    <!-- Benefits start -->
+     <section id="Benefits">
+        <div class="container py-5 my-5 align-items-center">
+            <h2 class="sub-title text-center mb-4">BENEFITS</h2>
+            <h4 class="mb-5 text-center text-capitalize">Your next career move starts here</h4>
+            <div class="row pb-5">
+                <div class="col-md-4">
+                    <i class="fas fa-search fa-2x text-primary pb-4"></i>
+                    <h5 class="text-uppercase">Search job listings</h5>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quo commodi suscipit ad et. 
+                        Inventore temporibus magnam mollitia aspernatur ut veritatis voluptatem obcaecati expedita ullam.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-search-dollar fa-2x text-primary pb-4"></i>
+                    <h5 class="text-uppercase">See Real Employee Salaries</h5>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quo commodi suscipit ad et. 
+                        Inventore temporibus magnam mollitia aspernatur ut veritatis voluptatem obcaecati expedita ullam.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <i class="far fa-thumbs-up fa-2x text-primary pb-4"></i>
+                    <h5 class="text-uppercase">Read Reviews From Employees</h5>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus quo commodi suscipit ad et. 
+                        Inventore temporibus magnam mollitia aspernatur ut veritatis voluptatem obcaecati expedita ullam.
+                    </p>
+                </div>
+            </div>
+            <button class="site-btn bg-primary text-uppercase fw-semibold">Sign Up</button>
+        </div>
+     </section>
+    <!-- Benefits end -->
+
+    <!-- Companies/patners start -->
+     <section id="Companies">
+        <div class="container py-5 mb-5">
+            <h2 class="text-center text-uppercase mb-4">Read up on our</h2>
+            <h4 class="text-center mb-5">Top Rated Companies</h4>
+            <div class="row company-logos mb-5">
+                <div class="col">
+                    <img src="/Assets/Copyright/Google-logo.png" class="logo-links active-logo" onclick="opentab('google')">
+                </div>
+                <div class="col">
+                    <img src="/Assets/Copyright/Logo_Sweco.png" class="logo-links" onclick="opentab('sweco')">
+                </div>
+                <div class="col">
+                    <img src="/Assets/Copyright/H&M-logo.png" class="logo-links" onclick="opentab('hm')">
+                </div>
+                <div class="col">
+                    <img src="/Assets/Copyright/Nike-logo.png" class="logo-links" onclick="opentab('nike')">
+                </div>
+                <div class="col">
+                    <img src="/Assets/Copyright/logo_PolarnOPyret.png" class="logo-links" onclick="opentab('polarnPyret')">
+                </div>
+            </div>
+            <div class="tab-content active-tab pb-3" id="google">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 offset-md-1 px-2 d-flex">
+                        <div>
+                            <span class="rate pt-1 pb-3 px-2 mx-2">4.9</span>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="mb-0">GOOGLE</h2>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <span>5732 reviews</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-0 px-2">
+                        <p>Client Review LLC is a valuable resource for workplace insights. Users praise the site's usefulness and ease
+                            of use, with some minor navigation issues reported. A trustworthy source for company reviews and ratings, helping job seekers make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content pb-3" id="sweco">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 offset-md-1 px-2 d-flex">
+                        <div>
+                            <span class="rate pt-1 pb-3 px-2 mx-2">4.9</span>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="mb-0">SWECO.</h2>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <span>5732 reviews</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-0 px-2">
+                        <p>Client Review LLC is a valuable resource for workplace insights. Users praise the site's usefulness and ease
+                            of use, with some minor navigation issues reported. A trustworthy source for company reviews and ratings, helping job seekers make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content pb-3" id="hm">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 offset-md-1 px-2 d-flex">
+                        <div>
+                            <span class="rate pt-1 pb-3 px-2 mx-2">4.9</span>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="mb-0">H&M</h2>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <span>5732 reviews</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-0 px-2">
+                        <p>Client Review LLC is a valuable resource for workplace insights. Users praise the site's usefulness and ease
+                            of use, with some minor navigation issues reported. A trustworthy source for company reviews and ratings, helping job seekers make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content pb-3" id="nike">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 offset-md-1 px-2 d-flex">
+                        <div>
+                            <span class="rate pt-1 pb-3 px-2 mx-2">4.9</span>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="mb-0">NIKE</h2>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <span>5732 reviews</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-0 px-2">
+                        <p>Client Review LLC is a valuable resource for workplace insights. Users praise the site's usefulness and ease
+                            of use, with some minor navigation issues reported. A trustworthy source for company reviews and ratings, helping job seekers make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content pb-3" id="polarnPyret">
+                <div class="row justify-content-center">
+                    <div class="col-md-4 offset-md-1 px-2 d-flex">
+                        <div>
+                            <span class="rate pt-1 pb-3 px-2 mx-2">4.9</span>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="mb-0">POLARN.O.PYRET</h2>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <i class="far fa-star text-primary"></i>
+                            <span>5732 reviews</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 offset-md-0 px-2">
+                        <p>Client Review LLC is a valuable resource for workplace insights. Users praise the site's usefulness and ease
+                            of use, with some minor navigation issues reported. A trustworthy source for company reviews and ratings, helping job seekers make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Companies/patners end -->
+
+    <!-- About us start -->
+     <section id="About">
+        <div class="container pt-5">
+            <div class="row"><hr>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h2 class="">ABOUT US</h2>
+                        <h4>We Are Review Clients LLC.</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam saepe ducimus
+                             voluptate asperiores! Perspiciatis commodi neque, aut voluptates facere est eos harum et iusto optio.
+                             voluptate asperiores! Perspiciatis sto optioectetur adipisicing elit.
+                             Lorem, ipsum dolor sit amet cons Perferendis adipisci fugit harum.
+                        </p>
+                        <button class="site-btn">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-img">
+                        <img src="/Assets/img/About.jpg" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- About us end -->
+
+    <!-- Footer start -->
+     <section class="footer bg-dark">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col text-start">
+                    <h5 class="">&copy; 2015 Review Clients LLC. All Rights Reserved.</h5>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Footer end -->
+
+    <script>
+
+        let logolinks = document.getElementsByClassName("logo-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(logolink of logolinks){
+                logolink.classList.remove("active-logo");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-logo");   
+            document.getElementById(tabname).classList.add("active-tab")            
+        }
+
+    </script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

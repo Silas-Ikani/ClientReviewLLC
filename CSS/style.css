@@ -1,0 +1,222 @@
+
+.Header-container{
+    height: 100vh;
+    padding: 1rem 0;
+    background: url(/Assets/img/hero-bg.jpg), linear-gradient(to bottom left,rgba(165, 31, 255, 0.644) 10%, rgba(60, 248, 192, 0.678) 90%);
+    background-position: center;
+    background-size: cover;
+
+    /* filter */
+    background-blend-mode: multiply;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 3.5rem;
+}
+
+#hero-section .container{
+    padding: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px; /* space between items */
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 15px;
+}
+.form-group{
+    flex: 1 1 auto;
+    min-width: 200px; /* minimum width for each group */
+}
+.form-group input,
+.form-group select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.hero-text{
+    font-weight: 100;
+}
+.hero-text em{
+    font-weight: 500;
+}
+
+/* 
+#form-inp1{
+    width: 350px;
+    height: 55px;
+    border: none;
+}
+#form-inp2{
+    width: 200px;
+    height: 55px;
+    padding: 0 2rem;
+    border: none;
+    border-radius: 4px;
+} */
+.form-btn{
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #aafd66;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+input{
+    outline: none;
+}
+::placeholder{
+    color: #252525;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #757474;
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    font-size: 30px;
+    color: #444444;
+}
+h5{
+    color: #444444;
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+    color: #444444;
+}
+.site-btn{
+    width: 200px;
+    height: 55px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #b189d6;
+    box-shadow: 2px 4px #d8d7d7;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* --Company reviews-- */
+.company-logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.company-logos img{
+    width: 120px;
+    cursor: pointer;
+}
+.company-logos div{
+    height: 150px;
+    justify-items: center;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    padding: 45px 20px 20px 20px;
+    transition: all 0.5s ease;
+    border-radius: 8px;
+}
+.company-logos div:hover{
+    background-color: #008cff;
+    transform: translateY(-5px);
+    border: none;
+    box-shadow: 0 4px #d3d2d2d5;
+}
+
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+span.rate{
+    font-size: 2.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #008cff;
+    color: #fff;
+    border-radius: 100%;
+}
+
+/* -- About Us -- */
+hr{
+    color: #757474;
+    position: relative;
+    top: 16px;
+}
+.about-text{
+    margin-top: 200px;
+}
+.about-img{
+    height: min-content;
+}
+
+/* -- Footer -- */
+.footer h5{
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    /* font-family: 'poppins'; */
+}
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+/* For smaller screens */
+@media screen and (max-width: 800px){
+   
+    .Header-container img{
+        width: 150px;
+    }
+    #hero-section .container{
+        justify-content: center;
+        align-items: center;
+    }
+    input::placeholder{
+        font-size: 1rem;
+    }
+    .company-logos{
+        flex-direction: column;
+    }
+    .company-logos div{
+        display: block;
+        margin: 10px;
+    }
+    .about-text{
+        text-align: center;
+    }
+} 
+
+/* For even smaller screens */
+@media (max-width: 600px) {
+    .form-container {
+        flex-direction: column;
+    }
+}
